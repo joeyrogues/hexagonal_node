@@ -7,9 +7,16 @@
   "author": "Joey <jrogues@hubside.com>",
   "license": "MIT",
   "dependencies": {
+    "jest": "^25.3.0",
+    "redis": "^3.0.2",
+    "uuid": "^7.0.3",
     "waterpump": "^1.0.1"
   },
   "scripts": {
-    "redis": "docker-compose -f docker-compose.yml run redis"
+    "compose": "docker-compose -f docker-compose.yml up -d",
+    "start:console": "node entrypoints/console.js",
+    "start:console:watch": "nodemon entrypoints/console.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   }
 }
