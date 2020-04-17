@@ -18,5 +18,8 @@
     "start:console:watch": "nodemon entrypoints/console.js",
     "test": "jest",
     "test:watch": "jest --watchAll"
+  },
+  "jest": {
+    "setupFiles": ["./testHelpers.js"]
   }
 }

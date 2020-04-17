@@ -15,5 +15,5 @@ To run the example you need:
 
 ```bash
 $> yarn start:console:watch # to run the console adapter
-$> yarn test:watch          # to run the test dapter
+$> yarn test:watch          # to run the test adapter
 ```

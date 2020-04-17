@@ -1,15 +1,7 @@
-const { register } = require('waterpump')()
-
-const ignore = new Proxy(() => {}, {
-  get: () => ignore,
-  apply: () => ignore
-})
-
-const callback = (err, ...params) => (...a) => a[a.length-1](err, ...params)
-
 register('uuid', () => ({ v4: () => 123 }))
-register('redis', () => ({ client: { hset: callback() } }))
-register('logger', ignore)
+register('redis', () => ({ client: { hset: mock.callback() } }))
+register('logger', mock.ignore)
+
 const userService = register('userService', require('../adapters/userService.js'))
 
 test('something', (done) => {
