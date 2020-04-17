@@ -3287,10 +3287,10 @@ walker@^1.0.7, walker@~1.0.5:
   dependencies:
     makeerror "1.0.x"
 
-waterpump@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/waterpump/-/waterpump-1.0.1.tgz#10caf92f5db97e738f0665988edfaaa25cd0000b"
-  integrity sha512-2ohPnRdKz+2crLPSPnnyslzIBNLiLnSqwArS0cnnKyO6LRWPKyH6cjsjQ1gAWDaS8+zM168x/ptd+1H8y+QhqA==
+waterpump@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/waterpump/-/waterpump-1.1.0.tgz#0118b313a03b94cbb036fcdb68bb50a4de872ccf"
+  integrity sha512-rBTSsq3LphgZlBvIlhuMYwfHngdnFLUY9RpplKeBRCmQzapf85I3ghuvfhxdpCljTdK6ya1lUAk4bAMbolYPag==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"

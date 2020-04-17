@@ -1,15 +1,5 @@
-const { register } = require('waterpump')()
-
-const ignore = new Proxy(() => {}, {
-  get: () => ignore,
-  apply: () => ignore
-})
-
-const callback = (err, ...params) => (...a) => a[a.length-1](err, ...params)
+const { register, mock } = require('waterpump')()
 
 global.register = register
 
-global.mock = {
-  ignore,
-  callback
-}
+global.mock = mock
