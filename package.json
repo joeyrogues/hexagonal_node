@@ -1,0 +1,15 @@
+{
+  "name": "hexa",
+  "description": "hexa",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "author": "Joey <jrogues@hubside.com>",
+  "license": "MIT",
+  "dependencies": {
+    "waterpump": "^1.0.1"
+  },
+  "scripts": {
+    "redis": "docker-compose -f docker-compose.yml run redis"
+  }
+}
